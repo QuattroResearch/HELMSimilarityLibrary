@@ -1,0 +1,28 @@
+Class Fingerprinter.java:
+
+public static BitSet calculateFingerprint(HELM2Notation notation);
+> Calculates the fingerprint for a given HELM notation by enumerating all of the monomer paths and representing each path as one bit in the fingerprint of size 1024
+
+public static BitSet calculateFingerprintNaturalAnalogs(HELM2Notation notation);
+> Calculates a combined fingerprint for a given HELM notation by enumerating all of the original monomer paths and all of the monomer paths converted into natural analogs and representing each path as one bit in the fingerprint of size 1024
+
+
+Class Similarity.java:
+
+public static double calculateSimilarity(HELM2Notation notation1, HELM2Notation notation2);
+> Method calculates the similarity (tanimoto coefficient) of two HELM notations
+
+public static double calculateSimilarityNatAnalogs(HELM2Notation notation1, HELM2Notation notation2);
+> Method calculates the similarity (tanimoto coefficient) of two HELM notations and takes the natural analogs of modified monomers into account
+
+public static double calculateSimilarity(BitSet helmBitFingerprintI, BitSet helmBitFingerprintJ);
+> Method calculates the similarity (tanimoto coefficient) of two bitset fingerprints
+
+
+Class Subset.java:
+
+public static Boolean checkHelmRelationship(HELM2Notation parentNotation, HELM2Notation childNotation);
+> Method checks if the parentNotation is completely enclosed in the childNotation, returns true in that case
+
+public static Boolean checkHelmRelationship(BitSet parentFprint, BitSet childFprint);
+> Method checks if parentFprint is a subset of childFprint, returns true in that case
