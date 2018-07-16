@@ -9,8 +9,15 @@
 	<packaging>jar</packaging>
 
 	<name>HELMSimilarityLibrary</name>
+	<description>Enables comparing of HELM strings through fingerprints</description>
 	<url>https://github.com/QuattroResearch/HELMSimilarityLibrary</url>
 
+	<licenses>
+		<license>
+			<name>MIT License</name>
+			<url>http://www.opensource.org/licenses/mit-license.php</url>
+		</license>
+	</licenses>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
