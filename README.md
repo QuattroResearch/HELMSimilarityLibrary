@@ -4,7 +4,7 @@ See APIs.txt for the use of HELMSimilarityLibrary.
 
 
 IMPORTANT if you are using the graphical user interface of the library:
-Extract HELMSimilarityLibrary-UI.zip. The UI is called by executing HELMSimilarityLibrary-<version>-jfx.jar. From the command line this would be "java -jar HELMSimilarityLibrary-<version>-jfx.jar".
+Extract HELMSimilarityLibrary-UI.zip. The UI is called by executing HELMSimilarityLibrary-version-jfx.jar with the correct version no. From the command line this would be "java -jar HELMSimilarityLibrary-version-jfx.jar" with the correct version no.
 If you are having problems starting the UI please make sure you have a directory called .helm in your user directory. It must contain the two files Chemistry.property and MonomerStoreConfig.properties. You might need to change "use.webservice=true" in MonomerStoreConfig.properties to "use.werbservice=false".
 While using the UI and encountering a problem, please restart  the program.
 See README-UI.md in HELMSimilarityLibrary-UI.zip archive for more information.
